@@ -1,0 +1,601 @@
+<!DOCTYPE html>
+    <html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <!--=============== FAVICON ===============-->
+        <link rel="shortcut icon" href="assets/images/favicon2.png">
+
+        <!--=============== BOXICONS ===============-->
+        
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/boxicons@latest/css/boxicons.min.css">
+
+        <!--=============== SWIPER CSS ===============--> 
+        <link rel="stylesheet" href="assets/css/swiper-bundle.min.css">
+
+        <!--=============== CSS ===============-->
+
+        <link rel="stylesheet" href="assets/css/styles.css">
+
+        <title>Responsive dishes website - Onlinemarket</title>
+    </head>
+    <body>
+        <!--==================== HEADER ====================-->
+        <header class="header" id="header">
+          <nav class="nav container">
+            <a href="#!" class="nav__logo">
+              <i class='bx bxs-coffee-alt nav__logo-item'></i> Dishes
+            </a>
+
+            <div class="nav__menu" id="nav-menu">
+              <ul class="nav__list">
+                <li class="nav__item">
+                  <a href="#home" class="nav__link active-link">Home</a>
+                </li>
+                <li class="nav__item">
+                  <a href="#featured" class="nav__link">ТОП-товари</a>
+                </li>
+                <li class="nav__item">
+                  <a href="#products" class="nav__link">Products</a>
+                </li>
+                <li class="nav__item">
+                  <a href="#new" class="nav__link">Нові вироби</a>
+                </li>
+              </ul>
+
+              <div class="nav__close" id="nav-close">
+                <i class='bx bx-x'></i>
+              </div>
+            </div>
+            
+            <div class="nav__btns">
+              <!-- Theme change button  -->
+              <i class='bx bx-moon change-theme' id="theme-button"></i>
+
+              <!-- <div class="nav__shop" id="cart-shop">
+                <i class='bx bxs-shopping-bag'></i>
+              </div> -->
+
+              <div class="nav__toggle" id="nav-toggle">
+                <i class='bx bx-grid-alt'></i>
+              </div>
+            </div>
+          </nav>
+        </header>
+
+        <!--==================== CART ====================-->
+        <!-- <div class="cart" id="cart">
+          <i class='bx bx-x cart__close' id='cart-close'></i>
+
+          <h2 class="cart__title-center">My Cap</h2>
+
+          <div class="cart__container">
+            <article class="cart__card">
+              <div class="cart__box">
+                <img src="assets/images/featured1.png" alt="" class="cart__img">
+              </div>
+
+              <div class="cart__details">
+                <h3 class="cart__title">Jazzmaster</h3>
+                <span class="cart__price">150 ml.</span>
+
+                <div class="cart__amount">
+                  <div class="cart__amount-content">
+                    <span class="cart__amount-box">
+                      <i class='bx bx-minus'></i>
+                    </span>
+
+                    <span class="cart__amount-number">1</span>
+
+                    <span class="cart__amount-box">
+                      <i class='bx bx-plus'></i>
+                    </span>
+                  </div>
+
+                  <i class='bx bx-trash cart__amount-trash'></i>
+                </div>
+              </div>
+            </article>
+
+            <article class="cart__card">
+              <div class="cart__box">
+                <img src="assets/images/featured2.png" alt="" class="cart__img">
+              </div>
+
+              <div class="cart__details">
+                <h3 class="cart__title">Rose Gold</h3>
+                <span class="cart__price">280 ml.</span>
+
+                <div class="cart__amount">
+                  <div class="cart__amount-content">
+                    <span class="cart__amount-box">
+                      <i class='bx bx-minus'></i>
+                    </span>
+
+                    <span class="cart__amount-number">1</span>
+
+                    <span class="cart__amount-box">
+                      <i class='bx bx-plus'></i>
+                    </span>
+                  </div>
+
+                  <i class='bx bx-trash cart__amount-trash'></i>
+                </div>
+              </div>
+            </article>
+
+            <article class="cart__card">
+              <div class="cart__box">
+                <img src="assets/images/featured3.png" alt="" class="cart__img">
+              </div>
+
+              <div class="cart__details">
+                <h3 class="cart__title">Longines Rose</h3>
+                <span class="cart__price">190 ml.</span>
+
+                <div class="cart__amount">
+                  <div class="cart__amount-content">
+                    <span class="cart__amount-box">
+                      <i class='bx bx-minus'></i>
+                    </span>
+
+                    <span class="cart__amount-number">1</span>
+
+                    <span class="cart__amount-box">
+                      <i class='bx bx-plus'></i>
+                    </span>
+                  </div>
+
+                  <i class='bx bx-trash cart__amount-trash'></i>
+                </div>
+              </div>
+            </article>
+          </div>
+
+          <div class="cart__prices">
+            <span class="cart__prices-item">3 items</span>
+            <span class="cart__prices-total">$2880</span>
+          </div>
+        </div> -->
+        <!--==================== MAIN ====================-->
+        <main class="main">
+            <!--==================== HOME ====================-->
+            <section class="home" id="home">
+                <div class="home__container container grid">
+                  <div class="home__img-bg">
+                    <img src="assets/images/dishesBoard.png" alt="" class="home__img">
+                  </div>
+
+                  <div class="home__social">
+                    <a href="#!" target="_blank" class="home__social-link">
+                      Facebook
+                    </a>
+                    <a href="#!" target="_blank" class="home__social-link">
+                      Twitter
+                    </a>
+                    <a href="#!" target="_blank" class="home__social-link">
+                      Instagram
+                    </a>
+                  </div>
+
+                  <div class="home__data">
+                    <h1 class="home__title">
+                      Ваш надійний партнер<br>у оптовому постачанні посуду
+                    </h1>
+                    <p class="home__description">
+                      Широкий асортимент, доступні ціни, швидка доставка
+                    </p>
+                    <span class="home__price">150 - 500 ml.</span>
+
+                    <div class="home__btns">
+                      <a href="#!" class="button button--gray button--small">
+                        Discover
+                      </a>
+
+                      <button class="button home__button">ADD TO cart</button>
+                    </div>
+                  </div>
+                </div>
+            </section>
+
+            <!--==================== FEATURED ====================-->
+            <section class="featured section container" id="featured">
+                <h2 class="section__title">
+                  ТОП-товари
+                </h2>
+
+                <div class="featured__container grid">
+                  <article class="featured__card">
+                    <span class="featured__tag">Sale</span>
+
+                    <img src="assets/images/featured1.png" alt="" class="featured__img">
+
+                    <div class="featured__data">
+                      <h3 class="featured__title">Чашка "Grecia"</h3>
+                      <span class="featured__price">280 мл.</span>
+                    </div>
+
+                    <div class="button featured__button">
+                      замовити прайс
+                    </div>
+                  </article>
+                  <article class="featured__card">
+                    <span class="featured__tag">Sale</span>
+
+                    <img src="assets/images/featured2.png" alt="" class="featured__img">
+
+                    <div class="featured__data">
+                      <h3 class="featured__title">Чашка "Boss"</h3>
+                      <span class="featured__price">500 мл.</span>
+                    </div>
+
+                    <div class="button featured__button">
+                      замовити прайс
+                    </div>
+                  </article>
+                  <article class="featured__card">
+                    <span class="featured__tag">Sale</span>
+
+                    <img src="assets/images/featured3.png" alt="" class="featured__img">
+
+                    <div class="featured__data">
+                      <h3 class="featured__title">Борщівниця</h3>
+                      <span class="featured__price">350 мл.</span>
+                    </div>
+
+                    <div class="button featured__button">
+                      замовити прайс
+                    </div>
+                  </article>
+                </div>
+            </section>
+
+            <!--==================== STORY ====================-->
+            <section class="story section container">
+                <div class="story__container grid">
+                  <div class="story__data">
+                    <h2 class="section__title story__section-title">
+                      Шукаєте надійного постачальника посуду оптом?
+                    </h2>
+
+                    <h1 class="story__title">
+                      ПКВХ "ОЛІМПІЯ" пропонує <br>широкий асортимент посуду для магазинів та інших закладів.
+                    </h1>
+
+                    <p class="story__description">
+                      У нас ви знайдете: <br>
+                      Тарілки: різноманітні форми та розміри 
+                      Чашки: різноманітні дизайни та літраж
+                      Інші товари: цукерниця, попяльничка в т.д
+                    </p>
+ 
+                    <a href="#!" class="button button--small">Прайс</a>
+                  </div>
+
+                  <div class="story__images">
+                    <img src="assets/images/story.png" alt="" class="story__img">
+                    <div class="story__square"></div>
+                  </div>
+                </div>
+            </section>
+
+            <!--==================== PRODUCTS ====================-->
+            <section class="products section container" id="products">
+              <h2 class="section__title">
+                Products
+              </h2>
+
+              <div class="products__container grid">
+                <article class="products__card">
+                  <img src="assets/images/product1.png" alt="" class="products__img">
+
+                  <h3 class="products__title">Spirit rose
+                    </h3>
+                  <span class="products__price">150 ml.</span>
+
+                  <button class="products__button">
+                    <i class='bx bxs-shopping-bag'></i>
+                  </button>
+                </article>
+                <article class="products__card">
+                  <img src="assets/images/product2.png" alt="" class="products__img">
+
+                  <h3 class="products__title">Khaki pilot</h3>
+                  <span class="products__price">135 ml.</span>
+
+                  <button class="products__button">
+                    <i class='bx bxs-shopping-bag'></i>
+                  </button>
+                </article>
+                <article class="products__card">
+                  <img src="assets/images/product3.png" alt="" class="products__img">
+
+                  <h3 class="products__title">Jubilee black</h3>
+                  <span class="products__price">280 ml.</span>
+
+                  <button class="products__button">
+                    <i class='bx bxs-shopping-bag'></i>
+                  </button>
+                </article>
+                <article class="products__card">
+                  <img src="assets/images/product4.png" alt="" class="products__img">
+
+                  <h3 class="products__title">Fosil me3</h3>
+                  <span class="products__price">350 ml.</span>
+
+                  <button class="products__button">
+                    <i class='bx bxs-shopping-bag'></i>
+                  </button>
+                </article>
+                <article class="products__card">
+                  <img src="assets/images/product5.png" alt="" class="products__img">
+
+                  <h3 class="products__title">Duchen</h3>
+                  <span class="products__price">250 ml.</span>
+
+                  <button class="products__button">
+                    <i class='bx bxs-shopping-bag'></i>
+                  </button>
+                </article>
+              </div>
+            </section>
+
+            <!--==================== TESTIMONIAL ====================-->
+            <section class="testimonial section container">
+              <div class="testimonial__container grid">
+                <div class="swiper testimonial-swiper">
+                  <div class="swiper-wrapper">
+                    <div class="testimonial__card swiper-slide">
+                      <div class="testimonial__quote">
+                        <i class='bx bxs-quote-alt-left'></i>
+                      </div>
+
+                      <p class="testimonial__description">
+                        У світі роздрібної торгівлі, де конкуренція неймовірно висока, знайти надійного постачальника посуду є вирішальним завданням. Наша співпраця з ПКВХ "ОЛІМПІЯ" не просто відповідає цим вимогам - вона перевершує наші найсміливіші очікування.
+                        <br>
+                        Одним із ключових аспектів, який робить ПКВХ "ОЛІМПІЯ" нашим партнером першого вибору, є бездоганна якість їхньої продукції.<br> Кожен товар, що ми отримали від компанії, вражає високоякісним виготовленням та довговічністю. Наші клієнти повністю довіряють товарів, які ми пропонуємо, завдяки якості, що гарантує ПКВХ "ОЛІМПІЯ".
+                      </p>
+                      <h3 class="testimonial__date">
+                        March 27. 2024
+                      </h3>
+
+                      <div class="testimonial__perfil">
+                        <img src="assets/images/testimonial1.jpg" alt="" class="testimonial__perfil-img">
+
+                        <div class="testimonial__perfil-data">
+                          <span class="testimonial__perfil-name">Lee Doe</span>
+                          <span class="testimonial__perfil-detail">Director of a company</span>
+                        </div>
+                      </div>
+                    </div>
+
+                    <div class="testimonial__card swiper-slide">
+                      <div class="testimonial__quote">
+                        <i class='bx bxs-quote-alt-left'></i>
+                      </div>
+
+                      <p class="testimonial__description">
+                          Співпраця з компанією ПКВХ "ОЛІМПІЯ" є важливим елементом нашої успішної діяльності в роздрібній торгівлі посудом.<br> За кілька років співпраці ми встановили стійку, ефективну і взаємовигідну робочу взаємодію, яка відображається на кожному аспекті нашого бізнесу.
+                          <br>
+                          Професіоналізм та відповідальність ПКВХ "ОЛІМПІЯ" також виявилися неоціненними в нашому досвіді співпраці. Їхні менеджери завжди на зв'язку, готові надати консультації, відповісти на запитання та вирішити будь-які питання щодо наших замовлень. Цілісність та добросовісність їхньої команди дозволяє нам довіряти їм в кожній справі.
+                      </p>
+                      <h3 class="testimonial__date">
+                        Desember 12. 2023
+                      </h3>
+
+                      <div class="testimonial__perfil">
+                        <img src="assets/images/testimonial2.jpg" alt="" class="testimonial__perfil-img">
+
+                        <div class="testimonial__perfil-data">
+                          <span class="testimonial__perfil-name">Samantha Mey</span>
+                          <span class="testimonial__perfil-detail">Director of a company</span>
+                        </div>
+                      </div>
+                    </div>
+
+                    <div class="testimonial__card swiper-slide">
+                      <div class="testimonial__quote">
+                        <i class='bx bxs-quote-alt-left'></i>
+                      </div>
+
+                      <p class="testimonial__description">
+                        Співпраця з ПКВХ "ОЛІМПІЯ" виявилася надзвичайно вдалим кроком для нашого бізнесу. <br>Вони не лише стали нашим надійним постачальником, а й нашим партнером, що сприяє нашому успіху та росту.
+                        <br>
+                        Перш за все, ми б хотіли підкреслити якість продукції, яку надає ПКВХ "ОЛІМПІЯ". Кожен товар, який ми отримали від них, вражає своєю дбайливою обробкою та довговічністю. Це дозволяє нам переконатися, що наші клієнти отримують найкращі продукти, які витримають випробування часом.
+                      </p>
+                      <h3 class="testimonial__date">
+                        April 14. 2024
+                      </h3>
+
+                      <div class="testimonial__perfil">
+                        <img src="assets/images/featured1.png" alt="" class="testimonial__perfil-img">
+
+                        <div class="testimonial__perfil-data">
+                          <span class="testimonial__perfil-name">Raul Zaman</span>
+                          <span class="testimonial__perfil-detail">Director of a company</span>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="swiper-button-next">
+                    <i class='bx bx-right-arrow'></i>
+                  </div>
+                  <div class="swiper-button-prev">
+                    <i class='bx bx-left-arrow'></i>
+                  </div>
+                </div>
+
+                <div class="testimonial__images">
+                  <div class="testimonial__square"></div>
+                  <img src="assets/images/testimonial.png" alt="" class="testimonial__img">
+                </div>
+              </div>
+            </section>
+
+            <!--==================== NEW ====================-->
+            <section class="new section container" id="new">
+               <h2 class="section__title">
+                 New Arrivals
+               </h2>
+
+               <div class="new__container">
+                 <div class="swiper new-swiper">
+                   <div class="swiper-wrapper">
+                     <article class="new__card swiper-slide">
+                      <span class="new__tag">New</span>
+
+                      <img src="assets/images/new1.png" alt="" class="new__img">
+
+                      <div class="new__data">
+                        <h3 class="new__title">Longines rose</h3>
+                        <span class="new__price">190 ml.</span>
+                      </div>
+
+                      <button class="button new__button">замовити прайс</button>
+                     </article>
+                     <article class="new__card swiper-slide">
+                      <span class="new__tag">New</span>
+
+                      <img src="assets/images/new2.png" alt="" class="new__img">
+
+                      <div class="new__data">
+                        <h3 class="new__title">Jazzmaster</h3>
+                        <span class="new__price">280 ml.</span>
+                      </div>
+
+                      <button class="button new__button">замовити прайс</button>
+                     </article>
+                     <article class="new__card swiper-slide">
+                      <span class="new__tag">New</span>
+
+                      <img src="assets/images/new3.png" alt="" class="new__img">
+
+                      <div class="new__data">
+                        <h3 class="new__title">Dreyfuss gold</h3>
+                        <span class="new__price">220 ml.</span>
+                      </div>
+
+                      <button class="button new__button">замовити прайс</button>
+                     </article>
+                     <article class="new__card swiper-slide">
+                      <span class="new__tag">New</span>
+
+                      <img src="assets/images/new4.png" alt="" class="new__img">
+
+                      <div class="new__data">
+                        <h3 class="new__title">Portuguese rose</h3>
+                        <span class="new__price">300 ml.</span>
+                      </div>
+
+                      <button class="button new__button">замовити прайс</button>
+                     </article>
+                   </div>
+                 </div>
+               </div>
+            </section>
+
+            <!--==================== NEWSLETTER ====================-->
+            <section class="newsletter section container">
+              <div class="newsletter__bg grid">
+                <div>
+                  <h2 class="newsletter__title">
+                    Отримайте консультацію
+                  </h2>
+
+                  <p class="newsletter__description">
+                    Введіть Ваші данні для більшого аналізу ефективної презентації наших послуг для ваших магазинів.
+                  </p>
+                </div>
+
+                <form action="" class="newsletter__subscride">
+                  <input type="email" placeholder="Enter your email" class="newsletter__input">
+                  <button class="button">
+                    SUBSCRIBE
+                  </button>
+                </form>
+              </div>
+            </section>
+        </main>
+
+        <!--==================== FOOTER ====================-->
+        <footer class="footer section">
+          <div class="footer__container container grid">
+            <div class="footer__content">
+              <h3 class="footer__title">Наша інформація</h3>
+
+              <ul class="footer__list">
+                <li>62481, Харківська обл.</li>
+                <li>Харківський р-н, смт Рогань</li>
+                <li>вул.Харківська, буд. 5 А</li>
+              </ul>
+            </div>
+
+            <div class="footer__content">
+              <h3 class="footer__title">Наші контакти</h3>
+
+              <ul class="footer__links">
+                <li>
+                  <a href="#!" class="footer__link">+38 097 780 00 77</a>
+                </li>
+                <li>
+                  <a href="#!" class="footer__link">b2b@onlinemarket.com.ua </a>
+                </li>
+                <li>
+                  <a href="#!" class="footer__link">з 9:00 по 18:00</a>
+                </li>
+              </ul>
+            </div>
+
+            <div class="footer__content">
+              <h3 class="footer__title">Product</h3>
+
+              <ul class="footer__links">
+                <li>
+                  <a href="#!" class="footer__link">Road bikes</a>
+                </li>
+                <li>
+                  <a href="#!" class="footer__link">Mountain bikes</a>
+                </li>
+                <li>
+                  <a href="#!" class="footer__link">Electric</a>
+                </li>
+                <li>
+                  <a href="#!" class="footer__link">Accesories</a>
+                </li>
+              </ul>
+            </div>
+
+            <div class="footer__content">
+              <h3 class="footer__title">Social</h3>
+
+              <ul class="footer__social">
+                <a href="#!" target="_blank" class="footer__social-link">
+                  <i class='bx bxl-facebook'></i>
+                </a>
+                <a href="#!" target="_blank" class="footer__social-link">
+                  <i class='bx bxl-twitter'></i>
+                </a>
+                <a href="#!" target="_blank" class="footer__social-link">
+                  <i class='bx bxl-instagram'></i>
+                </a>
+              </ul>
+            </div>
+          </div>
+
+          <span class="footer__copy">&#169; ITcom. All rigths reserved</span>
+        </footer>
+
+        <!--=============== SCROLL UP ===============-->
+        <a href="#" class="scrollup" id="scroll-up">
+          <i class='bx bx-up-arrow-alt scrollup__icon'></i>
+        </a>
+
+        <!--=============== SWIPER JS ===============-->
+        <script src="assets/js/swiper-bundle.min.js"></script>
+
+        <!--=============== MAIN JS ===============-->
+        <script src="assets/js/main.js"></script>
+    </body>
+</html>
