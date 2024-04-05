@@ -784,6 +784,7 @@ body.dark-theme{
   background: hsl(0, 0%, 17%);
 }
 /*=============== CART ===============*/
+/* 
 .cart{
   position: fixed;
   background-color: var(--body-color);
@@ -871,9 +872,9 @@ body.dark-theme{
   font-weight: var(--font-medium);
 }
 /* Show cart */
-.show-cart{
+/* .show-cart{
   right: 0;
-}
+} */ */
 
 /*=============== BREAKPOINTS ===============*/
 /* For small devices */
@@ -930,10 +931,10 @@ body.dark-theme{
   .section{
     padding: 8rem 0 1rem;
   }
-  .cart{
+  /* .cart{
     width: 420px;
     box-shadow: -2px 0 4px hsla(0, 0%, 15%, .1);
-  }
+  } */
   .nav{
     height: calc(var(--header-height) + 1.5rem);
     justify-content: initial;
@@ -1014,7 +1015,7 @@ body.dark-theme{
     padding: 4.5rem;
   }
   .newsletter__subscride{
-    flex-direction: row;
+    flex-direction: column;
   }
   .newsletter__input{
     width: 100%;
@@ -1099,4 +1100,14 @@ body.dark-theme{
   .scrollup{
     right: 3rem;
   }
+}
+
+
+/* Close */
+.some_close{
+  color: #a93434;
+}
+.some_close:hover {
+  color: #860404 !important;
+  font-weight: bold;
 }
